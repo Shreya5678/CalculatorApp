@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewCalculatorApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Calculator App"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextNumber1"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCalculatorApp"
+        android:layout_marginTop="16dp"
+        android:hint="Enter number 1"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNumber1"
+        android:layout_marginTop="35dp"
+        android:hint="Enter number 2"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNumber2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="97dp"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/btnSubtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNumber2"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="95dp"
+        android:layout_toEndOf="@id/btnAdd"
+        android:text="Subtract" />
+
+    <Button
+        android:id="@+id/btnMultiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAdd"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="75dp"
+        android:text="Multiply" />
+
+    <Button
+        android:id="@+id/btnDivide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAdd"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="75dp"
+        android:layout_toEndOf="@id/btnMultiply"
+        android:text="Divide" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="356dp"
+        android:layout_height="61dp"
+        android:layout_below="@id/btnMultiply"
+        android:layout_marginTop="116dp"
+        android:text="RESULT"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
